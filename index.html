@@ -191,6 +191,32 @@
             background-color: var(--accent-hover);
         }
 
+        .contact-section {
+            text-align: center;
+            margin-top: 40px;
+            padding: 20px;
+            background-color: var(--card-bg);
+            border: 1px solid var(--border-color);
+            border-radius: 12px;
+        }
+
+        .contact-section p {
+            margin: 0 0 12px 0;
+            color: var(--text-muted);
+            font-size: 0.95rem;
+        }
+
+        .contact-section a {
+            color: var(--accent-color);
+            text-decoration: none;
+            font-weight: 600;
+            transition: color 0.2s;
+        }
+
+        .contact-section a:hover {
+            color: var(--accent-hover);
+        }
+
         footer {
             text-align: center;
             margin-top: 80px;
@@ -212,8 +238,8 @@
 
     <main>
         <section class="intro-text">
-            <p>Stop waiting for legacy tools to catch up to your active calculations. <strong>Grandmaster Studio</strong> completely reimagines high-performance chess preparation for the modern Macintosh framework.</p>
-            <p>Engineered from the ground up in native Swift, it entirely bypasses inefficient virtualization layers or x86 translation. Grandmaster Studio harnesses the full structural layout of M-series chips, combining multi-core optimization with unified memory architecture to search millions of positions instantly without draining your laptop battery.</p>
+            <p>Stop waiting for legacy tools to catch up to your active calculations. <strong>Grandmaster Studio</strong> completely reimagines high-performance chess preparation for the modern Macintosh. Experience the difference that native performance makes.</p>
+            <p>Engineered from the ground up in native Swift, it entirely bypasses inefficient virtualization layers or x86 translation. Grandmaster Studio harnesses the full structural layout of M-series unified memory to deliver lightning-fast database queries and analysis.</p>
         </section>
 
         <section class="features">
@@ -239,7 +265,6 @@
             <h3>Join the Closed Beta</h3>
             <p>Help shape next-generation Mac chess software and secure early download access.</p>
             
-            <!-- Replace action URL with your Formspree, Tally, or backend endpoint later -->
             <form action="https://formspree.io/f/mwvgvdqk" method="POST">
                 <div class="form-group">
                     <label for="email">Contact Email Address</label>
@@ -280,7 +305,18 @@
 
                 <button type="submit">Apply for Beta Access</button>
             </form>
+
+            <div class="contact-section">
+                <p>Prefer direct contact? Reach out to us:</p>
+                <a href="mailto:beta@grandmaster.studio">beta@grandmaster.studio</a>
+            </div>
         </section>
     </main>
 
     <footer>
+        <p>&copy; 2024 Grandmaster Studio. All rights reserved.</p>
+    </footer>
+</div>
+
+</body>
+</html>
