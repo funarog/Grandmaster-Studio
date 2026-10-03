@@ -51,9 +51,76 @@
             padding: 40px 20px;
         }
 
+        .showcase-banner {
+            background: linear-gradient(135deg, #151c2c 0%, #0e1526 100%);
+            border: 1px solid rgba(56, 189, 248, 0.35);
+            border-radius: 16px;
+            padding: 36px 32px;
+            margin: 40px 0;
+            box-shadow: 0 12px 36px rgba(0, 0, 0, 0.4), 0 0 20px rgba(56, 189, 248, 0.08);
+            position: relative;
+        }
+
+        .showcase-tag {
+            display: inline-block;
+            font-size: 0.72rem;
+            font-weight: 700;
+            text-transform: uppercase;
+            letter-spacing: 0.08em;
+            color: var(--accent-color);
+            background: rgba(56, 189, 248, 0.12);
+            border: 1px solid rgba(56, 189, 248, 0.3);
+            padding: 4px 12px;
+            border-radius: 20px;
+            margin-bottom: 14px;
+        }
+
+        .showcase-title {
+            font-size: 1.6rem;
+            font-weight: 700;
+            color: var(--text-main);
+            margin: 0 0 6px 0;
+            letter-spacing: -0.01em;
+        }
+
+        .showcase-subtitle {
+            font-size: 1.1rem;
+            font-weight: 500;
+            color: var(--accent-color);
+            margin: 0 0 16px 0;
+        }
+
+        .showcase-text {
+            font-size: 1rem;
+            color: var(--text-muted);
+            line-height: 1.65;
+            margin: 0 0 24px 0;
+        }
+
+        .showcase-btn {
+            display: inline-flex;
+            align-items: center;
+            gap: 8px;
+            background-color: var(--accent-color);
+            color: #040711;
+            font-weight: 600;
+            font-size: 0.95rem;
+            padding: 12px 24px;
+            border-radius: 8px;
+            text-decoration: none;
+            transition: all 0.2s cubic-bezier(0.16, 1, 0.3, 1);
+            box-shadow: 0 4px 14px rgba(56, 189, 248, 0.25);
+        }
+
+        .showcase-btn:hover {
+            background-color: var(--accent-hover);
+            transform: translateY(-2px);
+            box-shadow: 0 6px 20px rgba(56, 189, 248, 0.4);
+        }
+
         header {
             text-align: center;
-            margin-bottom: 60px;
+            margin-bottom: 40px;
         }
 
         .app-logo {
@@ -114,6 +181,15 @@
             border: 1px solid var(--border-color);
             padding: 24px;
             border-radius: 12px;
+            display: flex;
+            flex-direction: column;
+            transition: border-color 0.2s, transform 0.2s, box-shadow 0.2s;
+        }
+
+        .feature-card:hover {
+            border-color: rgba(56, 189, 248, 0.4);
+            transform: translateY(-2px);
+            box-shadow: 0 8px 24px rgba(0, 0, 0, 0.3);
         }
 
         .feature-card h3 {
@@ -122,10 +198,39 @@
             color: var(--text-main);
         }
 
+        .feature-title-link {
+            color: inherit;
+            text-decoration: none;
+            transition: color 0.2s;
+        }
+
+        .feature-title-link:hover {
+            color: var(--accent-color);
+        }
+
         .feature-card p {
             margin: 0;
             font-size: 0.95rem;
             color: var(--text-muted);
+            line-height: 1.55;
+        }
+
+        .feature-card-link {
+            display: inline-flex;
+            align-items: center;
+            gap: 6px;
+            margin-top: auto;
+            padding-top: 14px;
+            color: var(--accent-color);
+            text-decoration: none;
+            font-size: 0.92rem;
+            font-weight: 600;
+            transition: color 0.2s, gap 0.2s;
+        }
+
+        .feature-card-link:hover {
+            color: var(--accent-hover);
+            gap: 9px;
         }
 
         .beta-box {
@@ -273,7 +378,26 @@
             <p>Engineered from the ground up in native Swift, it entirely bypasses inefficient virtualization layers or x86 translation. Grandmaster Studio harnesses the full structural layout of M-series unified memory to deliver lightning-fast database queries and analysis.</p>
         </section>
 
+        <section class="showcase-banner">
+            <div class="showcase-tag">Featured Analysis · The Search for Truth</div>
+            <h3 class="showcase-title">The Art of Modern Chess Analysis</h3>
+            <h4 class="showcase-subtitle">Lajos Portisch vs. Vasily Smyslov (1971)</h4>
+            <p class="showcase-text">Experience Grandmaster Studio's native analysis workflow. Follow the deep human struggle through the Leningrad Dutch, explore 15 moves inside the engine draw zone, and discover the hidden drawing resources that both grandmasters missed under practical pressure.</p>
+            <a href="Analysis/Lajos%20Portisch%20vs%20Vasily%20Smyslov.html" class="showcase-btn">
+                <span>Explore Portisch vs. Smyslov Analysis</span>
+                <span aria-hidden="true">&rarr;</span>
+            </a>
+        </section>
+
         <section class="features">
+            <div class="feature-card">
+                <h3><a href="GM%20Studio%20UI.png" target="_blank" class="feature-title-link">Built for Deep Study</a></h3>
+                <p>An elegant, modern interface designed strictly for macOS users who refuse to run slow emulators.</p>
+                <a href="GM%20Studio%20UI.png" target="_blank" class="feature-card-link">
+                    <span>View GM Studio UI</span>
+                    <span aria-hidden="true">&nearr;</span>
+                </a>
+            </div>
             <div class="feature-card">
                 <h3>Native arm64 Performance</h3>
                 <p>Run calculations natively on Apple Silicon. Eliminate translation lags when managing heavy opening books.</p>
@@ -285,10 +409,6 @@
             <div class="feature-card">
                 <h3>Unified Memory Efficiency</h3>
                 <p>Accelerate database queries by storing structures deep within M-series high-bandwidth unified RAM.</p>
-            </div>
-            <div class="feature-card">
-                <h3>Built for Deep Study</h3>
-                <p>An elegant, modern interface designed strictly for macOS users who refuse to run slow emulators.</p>
             </div>
         </section>
 
@@ -345,7 +465,12 @@
     </main>
 
     <footer>
-        <p>&copy; 2024 Grandmaster Studio. All rights reserved.</p>
+        <p style="margin-bottom: 8px;">
+            <a href="Analysis/Lajos%20Portisch%20vs%20Vasily%20Smyslov.html" style="color: var(--accent-color); text-decoration: none; font-weight: 500;">
+                The Art of Modern Chess Analysis: Lajos Portisch vs. Vasily Smyslov (1971) &rarr;
+            </a>
+        </p>
+        <p>&copy; 2026 Grandmaster Studio. All rights reserved.</p>
     </footer>
 </div>
 
