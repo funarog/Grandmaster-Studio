@@ -9,16 +9,22 @@
     <meta name="keywords" content="chess database, macOS chess, Apple Silicon chess, M1 M2 M3 M4 chess, Swift chess, PGN indexer, chess analysis, Grandmaster Studio">
     <meta name="robots" content="index, follow">
     
+    <!-- Favicons -->
+    <link rel="icon" type="image/png" sizes="32x32" href="assets/images/favicon-32x32.png">
+    <link rel="apple-touch-icon" sizes="180x180" href="assets/images/apple-touch-icon.png">
+    
     <!-- Open Graph / Social Sharing -->
     <meta property="og:type" content="website">
     <meta property="og:title" content="Grandmaster Studio | Next-Gen Mac Chess Database">
     <meta property="og:description" content="The advanced chess database built natively in Swift for Apple Silicon. Ultra-fast PGN indexing and deep unified memory analysis on macOS.">
     <meta property="og:url" content="https://grandmaster.studio/">
+    <meta property="og:image" content="https://grandmaster.studio/assets/images/app-icon.png">
     
     <!-- Twitter -->
     <meta name="twitter:card" content="summary_large_image">
     <meta name="twitter:title" content="Grandmaster Studio | Next-Gen Mac Chess Database">
     <meta name="twitter:description" content="The advanced chess database built natively in Swift for Apple Silicon. Ultra-fast PGN indexing and deep unified memory analysis on macOS.">
+    <meta name="twitter:image" content="https://grandmaster.studio/assets/images/app-icon.png">
     <style>
         :root {
             --bg-color: #0b0f19;
@@ -50,9 +56,19 @@
             margin-bottom: 60px;
         }
 
-        .logo-placeholder {
-            font-size: 3rem;
-            margin-bottom: 10px;
+        .app-logo {
+            width: 104px;
+            height: 104px;
+            border-radius: 23px;
+            box-shadow: 0 10px 30px rgba(0, 0, 0, 0.5), 0 0 25px rgba(56, 189, 248, 0.2);
+            margin-bottom: 14px;
+            transition: transform 0.25s cubic-bezier(0.16, 1, 0.3, 1), box-shadow 0.25s cubic-bezier(0.16, 1, 0.3, 1);
+            display: inline-block;
+        }
+
+        .app-logo:hover {
+            transform: translateY(-3px) scale(1.03);
+            box-shadow: 0 16px 36px rgba(0, 0, 0, 0.6), 0 0 35px rgba(56, 189, 248, 0.35);
         }
 
         h1 {
@@ -246,7 +262,7 @@
 
 <div class="container">
     <header>
-        <div class="logo-placeholder">🖥️</div>
+        <img src="assets/images/app-icon.png" alt="Grandmaster Studio App Icon" class="app-logo">
         <h1>Grandmaster Studio</h1>
         <h2>The Advanced Chess Database Built Natively for Apple Silicon</h2>
     </header>
