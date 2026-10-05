@@ -55,10 +55,50 @@
             background: linear-gradient(135deg, #151c2c 0%, #0e1526 100%);
             border: 1px solid rgba(56, 189, 248, 0.35);
             border-radius: 16px;
-            padding: 36px 32px;
+            padding: 0;
             margin: 40px 0;
             box-shadow: 0 12px 36px rgba(0, 0, 0, 0.4), 0 0 20px rgba(56, 189, 248, 0.08);
             position: relative;
+            overflow: hidden;
+            transition: border-color 0.25s, box-shadow 0.25s;
+        }
+
+        .showcase-banner:hover {
+            border-color: rgba(56, 189, 248, 0.55);
+            box-shadow: 0 16px 44px rgba(0, 0, 0, 0.5), 0 0 28px rgba(56, 189, 248, 0.14);
+        }
+
+        .showcase-media-link {
+            display: block;
+            position: relative;
+            overflow: hidden;
+            background: #060911;
+            aspect-ratio: 16 / 9;
+            border-bottom: 1px solid rgba(56, 189, 248, 0.2);
+            text-decoration: none;
+        }
+
+        .showcase-cover-img {
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+            display: block;
+            transition: transform 0.4s cubic-bezier(0.16, 1, 0.3, 1), filter 0.4s;
+        }
+
+        .showcase-media-link:hover .showcase-cover-img {
+            transform: scale(1.025);
+            filter: brightness(1.04);
+        }
+
+        .showcase-body {
+            padding: 32px;
+        }
+
+        @media (max-width: 600px) {
+            .showcase-body {
+                padding: 24px 20px;
+            }
         }
 
         .showcase-tag {
@@ -379,14 +419,19 @@
         </section>
 
         <section class="showcase-banner">
-            <div class="showcase-tag">Featured Analysis · The Search for Truth</div>
-            <h3 class="showcase-title">The Art of Modern Chess Analysis</h3>
-            <h4 class="showcase-subtitle">Lajos Portisch vs. Vasily Smyslov (1971)</h4>
-            <p class="showcase-text">Experience Grandmaster Studio's native analysis workflow. Follow the deep human struggle through the Leningrad Dutch, explore 15 moves inside the engine draw zone, and discover the hidden drawing resources that both grandmasters missed under practical pressure.</p>
-            <a href="Analysis/Lajos%20Portisch%20vs%20Vasily%20Smyslov.html" class="showcase-btn">
-                <span>Explore Portisch vs. Smyslov Analysis</span>
-                <span aria-hidden="true">&rarr;</span>
+            <a href="Analysis/Lajos%20Portisch%20vs%20Vasily%20Smyslov.html" class="showcase-media-link" aria-label="Explore Portisch vs. Smyslov Analysis">
+                <img src="assets/images/portisch-smyslov-chesscom-cover-final-16x9.jpg" alt="The Art of Modern Chess Analysis - Lajos Portisch vs Vasily Smyslov (1971)" class="showcase-cover-img">
             </a>
+            <div class="showcase-body">
+                <div class="showcase-tag">Featured Analysis · The Search for Truth</div>
+                <h3 class="showcase-title">The Art of Modern Chess Analysis</h3>
+                <h4 class="showcase-subtitle">Lajos Portisch vs. Vasily Smyslov (1971)</h4>
+                <p class="showcase-text">Experience Grandmaster Studio's native analysis workflow. Follow the deep human struggle through the Leningrad Dutch, explore 15 moves inside the engine draw zone, and discover the hidden drawing resources that both grandmasters missed under practical pressure.</p>
+                <a href="Analysis/Lajos%20Portisch%20vs%20Vasily%20Smyslov.html" class="showcase-btn">
+                    <span>Explore Portisch vs. Smyslov Analysis</span>
+                    <span aria-hidden="true">&rarr;</span>
+                </a>
+            </div>
         </section>
 
         <section class="features">
