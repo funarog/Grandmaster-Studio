@@ -3,7 +3,34 @@
 <head>
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
-<title>Lajos Portisch vs Vasily Smyslov</title>
+<title>Lajos Portisch vs Vasily Smyslov | The Art of Modern Chess Analysis</title>
+<link rel="canonical" href="https://grandmaster.studio/Analysis/Lajos%20Portisch%20vs%20Vasily%20Smyslov.html">
+<meta name="description" content="In-depth grandmaster analysis of Portisch vs. Smyslov (Portoroz 1971), contrasting classical human intuition from Smyslov and Timman with Leela Chess Zero (LC0) neural evaluations.">
+<meta name="keywords" content="Lajos Portisch, Vasily Smyslov, Jan Timman, Dutch Defense, Leningrad Dutch, Leela Chess Zero, LC0, Grandmaster Studio, Chess Analysis, Portoroz 1971">
+<meta name="robots" content="index, follow">
+
+<!-- Security Hardening -->
+<meta http-equiv="Content-Security-Policy" content="default-src 'self'; script-src 'self' 'unsafe-inline'; style-src 'self' 'unsafe-inline'; img-src 'self' data: https:; font-src 'self'; connect-src 'self'; object-src 'none'; base-uri 'self';">
+<meta http-equiv="X-Content-Type-Options" content="nosniff">
+<meta name="referrer" content="strict-origin-when-cross-origin">
+
+<!-- Favicons -->
+<link rel="icon" type="image/png" sizes="32x32" href="../assets/images/favicon-32x32.png">
+<link rel="apple-touch-icon" sizes="180x180" href="../assets/images/apple-touch-icon.png">
+
+<!-- Open Graph / Social Sharing -->
+<meta property="og:type" content="article">
+<meta property="og:title" content="Lajos Portisch vs Vasily Smyslov | The Art of Modern Chess Analysis">
+<meta property="og:description" content="Explore Portoroz 1971 through the lens of human intuition and neural network evaluations with Leela Chess Zero in Grandmaster Studio.">
+<meta property="og:url" content="https://grandmaster.studio/Analysis/Lajos%20Portisch%20vs%20Vasily%20Smyslov.html">
+<meta property="og:image" content="https://grandmaster.studio/assets/images/portisch-smyslov-chesscom-cover-final-16x9.jpg">
+
+<!-- Twitter Card -->
+<meta name="twitter:card" content="summary_large_image">
+<meta name="twitter:title" content="Lajos Portisch vs Vasily Smyslov | The Art of Modern Chess Analysis">
+<meta name="twitter:description" content="Explore Portoroz 1971 through the lens of human intuition and neural network evaluations with Leela Chess Zero in Grandmaster Studio.">
+<meta name="twitter:image" content="https://grandmaster.studio/assets/images/portisch-smyslov-chesscom-cover-final-16x9.jpg">
+
 <style>
 :root {
     color-scheme: light dark;
@@ -649,7 +676,7 @@ body.fb .cx-current { border-radius: 4px; }
 <h2 id="_the_search_for_truth">The Search for Truth</h2>
 <div class="sectionbody">
 <div class="paragraph">
-<p>To analyze a game of chess is to search for truth, but "truth" in chess has radically evolved over the last half-century. In the pre-computer era, the gold standard of chess analysis was a rigorous, collaborative, deeply human endeavor. It required a profound mixture of intuition, meticulous calculation, and psychological insight. Today, there is still plenty to learn from human insight, but we also look through the lens of modern engines. Ultimately, analysis without insight is just noise, and insight without analysis is just guesswork. The true "art" of analysis happens when human curiosity directs the power of technology to solve the right problems. This tension between human curiosity and machine capability is a modern concern across many disciplines, as mathematician Terry Tao recently explored: <a href="https://terrytao.wordpress.com/2026/09/11/a-severe-misalignment-of-ai-in-mathematics/">A Severe Misalignment of AI in Mathematics</a></p>
+<p>To analyze a game of chess is to search for truth, but "truth" in chess has radically evolved over the last half-century. In the pre-computer era, the gold standard of chess analysis was a rigorous, collaborative, deeply human endeavor. It required a profound mixture of intuition, meticulous calculation, and psychological insight. Today, there is still plenty to learn from human insight, but we also look through the lens of modern engines. Ultimately, analysis without insight is just noise, and insight without analysis is just guesswork. The true "art" of analysis happens when human curiosity directs the power of technology to solve the right problems. This tension between human curiosity and machine capability is a modern concern across many disciplines, as mathematician Terry Tao recently explored: <a href="https://terrytao.wordpress.com/2026/09/11/a-severe-misalignment-of-ai-in-mathematics/" target="_blank" rel="noopener noreferrer">A Severe Misalignment of AI in Mathematics</a></p>
 </div>
 <div class="paragraph">
 <p>In his book Smyslov famously wrote:</p>
@@ -674,15 +701,15 @@ body.fb .cx-current { border-radius: 4px; }
 <dl>
 <dt class="hdlist1">Lajos Portisch</dt>
 <dd>
-<p>Widely nicknamed "The Hungarian Botvinnik" by the Soviets, due to his disciplined, scientific, and deeply prepared approach to the openings. Portisch himself was never entirely comfortable with the label. Read his <a href="https://en.chessbase.com/post/a-talk-with-legendary-lajos-portisch-part-i">ChessBase interview.</a> As of this writing, The Sportsman of the Nation is 89 years old and is still in good health, recently performing an aria at the 45th FIDE Chess Olympiad.</p>
+<p>Widely nicknamed "The Hungarian Botvinnik" by the Soviets, due to his disciplined, scientific, and deeply prepared approach to the openings. Portisch himself was never entirely comfortable with the label. Read his <a href="https://en.chessbase.com/post/a-talk-with-legendary-lajos-portisch-part-i" target="_blank" rel="noopener noreferrer">ChessBase interview.</a> As of this writing, The Sportsman of the Nation is 89 years old and is still in good health, recently performing an aria at the 45th FIDE Chess Olympiad.</p>
 </dd>
 <dt class="hdlist1">Vasily Smyslov</dt>
 <dd>
-<p>Universally celebrated in chess history for his smooth, intuitive harmony, the former World Champion viewed chess as an art form rather than a science, relying heavily on seamless piece coordination and flawless endgame technique. Sharing his personal insights in <strong><em>Smyslov&#8217;s Best Games Volume II: 1958-1990</em></strong>, he offers an invaluable, deeply subjective strategic perspective from the man who actually wielded the pieces. Former World Chess Champion Vasily Smyslov passed away on March 27, 2010, at the age of 89. To the end, though he was awed by the abilities of chess engines, he maintained that the true soul of chess remained a human endeavor. An interesting read is <a href="http://www.gmsquare.com/interviews/smyslov.html"><em>I am Still Needed in this World!</em></a>.</p>
+<p>Universally celebrated in chess history for his smooth, intuitive harmony, the former World Champion viewed chess as an art form rather than a science, relying heavily on seamless piece coordination and flawless endgame technique. Sharing his personal insights in <strong><em>Smyslov&#8217;s Best Games Volume II: 1958-1990</em></strong>, he offers an invaluable, deeply subjective strategic perspective from the man who actually wielded the pieces. Former World Chess Champion Vasily Smyslov passed away on March 27, 2010, at the age of 89. To the end, though he was awed by the abilities of chess engines, he maintained that the true soul of chess remained a human endeavor. An interesting read is <a href="http://www.gmsquare.com/interviews/smyslov.html" target="_blank" rel="noopener noreferrer"><em>I am Still Needed in this World!</em></a>.</p>
 </dd>
 <dt class="hdlist1">Jan Timman</dt>
 <dd>
-<p>Provides pure human grandmaster insight in his seminal work, <strong><em>The Art of Chess Analysis</em></strong>, which explicitly opens with this 1971 clash from Portoroz. Timman highlights the precise friction between the two masters: how Portisch handled the position with his typical methodical, somewhat dogmatic structural views, while Smyslov treated the Leningrad Variation of the Dutch Defense in a highly unconventional, piece-active manner. See his 2020 interview with <a href="https://www.youtube.com/watch?v=mHy53Dt9INM&amp;t=1091s">Judit Polgar</a>. Jan Timman passed away in February 2026.</p>
+<p>Provides pure human grandmaster insight in his seminal work, <strong><em>The Art of Chess Analysis</em></strong>, which explicitly opens with this 1971 clash from Portoroz. Timman highlights the precise friction between the two masters: how Portisch handled the position with his typical methodical, somewhat dogmatic structural views, while Smyslov treated the Leningrad Variation of the Dutch Defense in a highly unconventional, piece-active manner. See his 2020 interview with <a href="https://www.youtube.com/watch?v=mHy53Dt9INM&amp;t=1091s" target="_blank" rel="noopener noreferrer">Judit Polgar</a>. Jan Timman passed away in February 2026.</p>
 </dd>
 <dt class="hdlist1">Leela Chess Zero &amp; Grandmaster Studio</dt>
 <dd>
@@ -696,7 +723,7 @@ body.fb .cx-current { border-radius: 4px; }
 <h2 id="_tracking_the_points_of_insight">Tracking the Points of Insight</h2>
 <div class="sectionbody">
 <div class="paragraph">
-<p>To structure this modern approach to chess analysis, critical moments are taken directly from the points where both Smyslov and Timman felt it important to stop and comment. Where these two legendary minds overlap, we gain insight on how grandmasters see a game. This is something a computer cannot teach. The intent of this article is to "contribute to the conversation" as FIDE Master Andy Lee wrote in <a href="https://litandchess.substack.com/p/what-timman-knew">What Timman Knew</a> by going beyond just computer analysis and searching for a method to truly improve our chess game. I hope the conversation continues at the surprise at move 20.</p>
+<p>To structure this modern approach to chess analysis, critical moments are taken directly from the points where both Smyslov and Timman felt it important to stop and comment. Where these two legendary minds overlap, we gain insight on how grandmasters see a game. This is something a computer cannot teach. The intent of this article is to "contribute to the conversation" as FIDE Master Andy Lee wrote in <a href="https://litandchess.substack.com/p/what-timman-knew" target="_blank" rel="noopener noreferrer">What Timman Knew</a> by going beyond just computer analysis and searching for a method to truly improve our chess game. I hope the conversation continues at the surprise at move 20.</p>
 </div>
 <div class="paragraph">
 <p>While human eyes may have their limits, the climax of modern analysis comes not when Leela, Stockfish or some other engine illuminates a hidden critical moment that grandmasters overlooked. But the true climax comes when we examine a profound moment—such as when Portisch missed a golden opportunity—and ask why. What happens when Timman&#8217;s pursuit of perfection and Smyslov&#8217;s classical harmony, are cross-examined by a neural network trained on millions of games? Let’s dive into the moves and explore the true state of modern chess artistry.</p>
