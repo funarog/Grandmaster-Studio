@@ -9,7 +9,7 @@ body {
     font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
     line-height: 1.65;
     color: #1f2937;
-    background: #f3f4f6;
+    background: #0f172a;
     margin: 0;
     padding: 20px;
 }
@@ -20,7 +20,8 @@ body {
     color: #f8fafc;
     padding: 20px 24px;
     border-radius: 12px;
-    box-shadow: 0 10px 25px rgba(0,0,0,0.15);
+    box-shadow: 0 10px 25px rgba(0,0,0,0.3);
+    border: 1px solid #334155;
 }
 .helper-banner h2 {
     margin-top: 0;
@@ -64,42 +65,40 @@ body {
 .content-card {
     max-width: 820px;
     margin: 0 auto;
-    background: #ffffff;
+    background: #181d28;
+    color: #f1f5f9;
     padding: 40px;
     border-radius: 12px;
-    box-shadow: 0 4px 20px rgba(0,0,0,0.06);
+    box-shadow: 0 4px 24px rgba(0,0,0,0.4);
+    border: 1px solid #283347;
 }
-h1 { font-size: 2em; line-height: 1.25; margin-bottom: 0.4em; color: #0f172a; }
-h2 { font-size: 1.5em; border-bottom: 2px solid #e2e8f0; padding-bottom: 0.3em; margin-top: 1.4em; color: #1e293b; }
-h3 { font-size: 1.25em; margin-top: 1.2em; color: #334155; }
-h4 { font-size: 1.1em; color: #475569; }
+h1 { font-size: 2em; line-height: 1.25; margin-bottom: 0.4em; color: #f8fafc; }
+h2 { font-size: 1.5em; border-bottom: 2px solid #334155; padding-bottom: 0.3em; margin-top: 1.4em; color: #38bdf8; }
+h3 { font-size: 1.25em; margin-top: 1.2em; color: #e2e8f0; }
+h4 { font-size: 1.1em; color: #94a3b8; }
 blockquote {
-    border-left: 4px solid #94a3b8;
+    border-left: 4px solid #38bdf8;
     margin: 1.2em 0;
-    padding: 8px 18px;
-    color: #334155;
-    background: #f8fafc;
-    border-radius: 0 4px 4px 0;
+    padding: 10px 18px;
+    color: #e2e8f0;
+    background: #1e293b;
+    border-radius: 0 6px 6px 0;
 }
 dl { margin: 1em 0; }
-dt { font-weight: bold; color: #0f172a; margin-top: 0.8em; font-size: 1.05em; }
-dd { margin-left: 0; margin-bottom: 0.8em; }
-a { color: #0284c7; text-decoration: underline; }
+dt { font-weight: bold; color: #38bdf8; margin-top: 0.8em; font-size: 1.05em; }
+dd { margin-left: 0; margin-bottom: 0.8em; color: #e2e8f0; }
+a { color: #38bdf8; text-decoration: underline; }
 </style>
 </head>
 <body>
 
 <div class="helper-banner">
-    <h2>📋 Chess.com Blog Drop-In Assistant</h2>
-    <p>This edition strips the interactive side-board, SVG diagrams, and scripts so it pastes cleanly into the Chess.com blog editor without getting mangled.</p>
-    <p><strong>Two easy ways to copy:</strong></p>
-    <ol style="margin: 8px 0 14px 20px; padding: 0; color: #cbd5e1; font-size: 0.95em;">
-        <li>Click the blue <strong>&ldquo;Copy Rich Text to Clipboard&rdquo;</strong> button below, then switch to your Chess.com blog post and press <strong>Cmd + V</strong>.</li>
-        <li>Or click inside the white article card below, select all (<strong>Cmd + A</strong>), copy (<strong>Cmd + C</strong>), and paste into Chess.com.</li>
-    </ol>
+    <h2>📋 Chess.com Dark-Mode Optimized Edition</h2>
+    <p>✅ <strong>Real Visual Chessboard Diagrams</strong> embedded for Move 5, Move 10, and Move 16.<br>
+       ✅ <strong>Dark-Mode High Contrast</strong>: Variation cards now use high-contrast dark navy cards with bright cyan headings so text is never washed out.</p>
     <button class="copy-btn" id="copyBtn" onclick="copyRichText()">
         <span>📋</span>
-        <span>Copy Rich Text to Clipboard</span>
+        <span>Copy Rich Text for Chess.com</span>
     </button>
     <span id="status-msg"></span>
 </div>
@@ -239,38 +238,38 @@ Smyslov was playing White, and Botvinnik, playing Black, successfully neutralize
 <div >
 <p>Some say Magnus Carlsen revolutionized modern chess by weaponizing patience.</p>
 </div>
-<div style="margin: 20px 0; padding: 14px 18px; border-left: 4px solid #0284c7; background: #f0f9ff; border-radius: 4px;"><div style="font-weight: bold; color: #0369a1; margin-bottom: 8px; font-size: 1.05em;">🔍 Variation: 4. c4</div>
+<div style="margin: 22px 0; padding: 16px 20px; border-left: 4px solid #38bdf8; background: #1e293b; color: #f8fafc; border-radius: 6px;"><div style="font-weight: 700; color: #38bdf8; margin-bottom: 10px; font-size: 1.1em; letter-spacing: -0.01em;">🔍 Variation: 4. c4</div>
 <div >
-<p><strong>4. c4 Bg7 5. Nc3 O-O 6. Nh3</strong></p>
+<p style="color: #f1f5f9; line-height: 1.6;"><strong>4. c4 Bg7 5. Nc3 O-O 6. Nh3</strong></p>
 </div>
 <div >
-<p>The brilliance of Taimanov’s system that Timman was referring to lies in how White develops the King’s Knight. By placing the Knight on <strong>h3</strong> rather than the traditional <strong>f3</strong> square, White accomplishes three strategic goals against the Leningrad setup:</p>
+<p style="color: #f1f5f9; line-height: 1.6;">The brilliance of Taimanov’s system that Timman was referring to lies in how White develops the King’s Knight. By placing the Knight on <strong>h3</strong> rather than the traditional <strong>f3</strong> square, White accomplishes three strategic goals against the Leningrad setup:</p>
 </div>
 <div class="olist arabic">
 <ol class="arabic">
-<li>
-<p><strong>Unblocking the f-pawn:</strong> By keeping the <strong>f3</strong>-square clear, White preserves the option to play an eventual <strong>f2-f3</strong> followed by <strong>e2-e4</strong>, allowing White to forcefully seize control of the absolute center.</p>
+<li style="color: #f1f5f9; line-height: 1.6;">
+<p style="color: #f1f5f9; line-height: 1.6;"><strong>Unblocking the f-pawn:</strong> By keeping the <strong>f3</strong>-square clear, White preserves the option to play an eventual <strong>f2-f3</strong> followed by <strong>e2-e4</strong>, allowing White to forcefully seize control of the absolute center.</p>
 </li>
-<li>
-<p><strong>Targeting the e6-square:</strong> From <strong>h3</strong>, the Knight can jump to <strong>f4</strong>, where it eyes the <strong>d5</strong> and <strong>e6</strong> squares, severely cramping Black’s light-squared Bishop and restricting Black’s liberating pawn breaks.</p>
+<li style="color: #f1f5f9; line-height: 1.6;">
+<p style="color: #f1f5f9; line-height: 1.6;"><strong>Targeting the e6-square:</strong> From <strong>h3</strong>, the Knight can jump to <strong>f4</strong>, where it eyes the <strong>d5</strong> and <strong>e6</strong> squares, severely cramping Black’s light-squared Bishop and restricting Black’s liberating pawn breaks.</p>
 </li>
-<li>
-<p><strong>Preventing tactical pins:</strong> It takes the sting out of any potential pin or tactical counter-play Black might attempt on the long diagonal.</p>
+<li style="color: #f1f5f9; line-height: 1.6;">
+<p style="color: #f1f5f9; line-height: 1.6;"><strong>Preventing tactical pins:</strong> It takes the sting out of any potential pin or tactical counter-play Black might attempt on the long diagonal.</p>
 </li>
 </ol>
 </div>
 <div >
-<p>Timman points out that this exact system was highly popular at the time and was used effectively in the 1971 Championship of the Netherlands.</p>
+<p style="color: #f1f5f9; line-height: 1.6;">Timman points out that this exact system was highly popular at the time and was used effectively in the 1971 Championship of the Netherlands.</p>
 </div>
 <div >
-<p>Portisch simply opted for the quieter 4.Nf3 instead.</p>
+<p style="color: #f1f5f9; line-height: 1.6;">Portisch simply opted for the quieter 4.Nf3 instead.</p>
 </div>
 </div>
 <div >
 <p><strong>4... Bg7 5. b3</strong></p>
 </div>
 <div >
-<p><div style="font-style: italic; color: #475569; margin: 16px 0; padding: 10px 14px; background: #f8fafc; border-left: 3px solid #94a3b8; border-radius: 4px;">📌 [Position after 5. b3 — Semi-Leningrad Structure]</div> Timman thought this line was first used in 1960 by Trifunović
+<p><div style="text-align: center; margin: 28px 0;"><img alt="Position after 5. b3 — Semi-Leningrad structure" src="https://grandmaster.studio/assets/images/diagram-move-5.png" style="max-width: 440px; width: 100%; height: auto; border-radius: 8px; box-shadow: 0 6px 18px rgba(0,0,0,0.35); display: inline-block;"/><div style="font-size: 0.9em; font-style: italic; color: #94a3b8; margin-top: 8px;">Position after 5. b3 — Semi-Leningrad structure</div></div> Timman thought this line was first used in 1960 by Trifunović
 against Matulović. However, one earlier recorded master-level game featuring this exact position on move 5 was played on February 27, 1925, between Richard Réti and Savielly Tartakower during the famous Baden-Baden 1925 chess tournament.</p>
 </div>
 <div >
@@ -312,7 +311,7 @@ In short, Smyslov was ahead of his time. He was playing "modern" chess half a ce
 <p><strong>7. c4 c6 8. O-O Be6!? 9. Ng5 Bf7 10. Nc3 Qe8?!</strong></p>
 </div>
 <div >
-<p><div style="font-style: italic; color: #475569; margin: 16px 0; padding: 10px 14px; background: #f8fafc; border-left: 3px solid #94a3b8; border-radius: 4px;">📌 [Position after 10... Qe8?! — Black unpins the Knight]</div> Timman finds this move to be 'strange'. Leela agrees. It gives white a slight edge. Perhaps it is a bit too passive. Leela places any of these moves as better (10…​e6,10…​Bh6,10…​a5,10…​Ne4,10…​h6,)</p>
+<p><div style="text-align: center; margin: 28px 0;"><img alt="Position after 10... Qe8?! — Black unpins the Knight" src="https://grandmaster.studio/assets/images/diagram-move-10.png" style="max-width: 440px; width: 100%; height: auto; border-radius: 8px; box-shadow: 0 6px 18px rgba(0,0,0,0.35); display: inline-block;"/><div style="font-size: 0.9em; font-style: italic; color: #94a3b8; margin-top: 8px;">Position after 10... Qe8?! — Black unpins the Knight</div></div> Timman finds this move to be 'strange'. Leela agrees. It gives white a slight edge. Perhaps it is a bit too passive. Leela places any of these moves as better (10…​e6,10…​Bh6,10…​a5,10…​Ne4,10…​h6,)</p>
 </div>
 <div >
 <p>This position strikes me as what Jonathan Rowson would call <strong>"doing nothing"</strong>. Rowson argues that against a solid opponent, actively trying to create something out of nothing is a psychological trap. Instead, he suggests maintaining a good position and waiting; literally "doing nothing" constructive can sometimes force the opponent to try and make progress until they make a mistake.</p>
@@ -323,9 +322,9 @@ In short, Smyslov was ahead of his time. He was playing "modern" chess half a ce
 <div >
 <p>Timman found this move to be a bit odd. It’s not; (11.e3, 11.f3, 11.Rc1, 11.Qd3, 11.a4) all are roughly equivalent. Stockfish and Leela claim White has a 25% chance of winning and a negligible chance of losing.</p>
 </div>
-<div style="margin: 20px 0; padding: 14px 18px; border-left: 4px solid #0284c7; background: #f0f9ff; border-radius: 4px;"><div style="font-weight: bold; color: #0369a1; margin-bottom: 8px; font-size: 1.05em;">🔍 Variation: 11. ♜c1</div>
+<div style="margin: 22px 0; padding: 16px 20px; border-left: 4px solid #38bdf8; background: #1e293b; color: #f8fafc; border-radius: 6px;"><div style="font-weight: 700; color: #38bdf8; margin-bottom: 10px; font-size: 1.1em; letter-spacing: -0.01em;">🔍 Variation: 11. ♜c1</div>
 <div >
-<p><strong>11. Rc1 h6 12. Nxf7 Qxf7 13. Na4 Na6 14. cxd5 cxd5 15. b4 e6 16. b5 Nc7 17. Qb3 Rfd8 18. Rc2 Nce8 19. Ba3 Rac8 20. Rfc1 Rxc2 21. Rxc2 Ne4 22. e3 b6 23. Nb2 Qd7 24. Rc6 Rc8 Eval: +0.69 wdl:[42%,42%,15%]</strong></p>
+<p style="color: #f1f5f9; line-height: 1.6;"><strong>11. Rc1 h6 12. Nxf7 Qxf7 13. Na4 Na6 14. cxd5 cxd5 15. b4 e6 16. b5 Nc7 17. Qb3 Rfd8 18. Rc2 Nce8 19. Ba3 Rac8 20. Rfc1 Rxc2 21. Rxc2 Ne4 22. e3 b6 23. Nb2 Qd7 24. Rc6 Rc8 Eval: +0.69 wdl:[42%,42%,15%]</strong></p>
 </div>
 </div>
 <div >
@@ -362,7 +361,7 @@ penetrating with his knight to c4, as Timman believes.</p>
 <p><strong>15. bxc4 Nb6 16. c5 Nc4</strong></p>
 </div>
 <div >
-<p><div style="font-style: italic; color: #475569; margin: 16px 0; padding: 10px 14px; background: #f8fafc; border-left: 3px solid #94a3b8; border-radius: 4px;">📌 [Critical Moment: Position after 16... Nc4 — White to Move]</div> What is the best move for white?</p>
+<p><div style="text-align: center; margin: 28px 0;"><img alt="Critical Turning Point: Position after 16... Nc4 — White to Move" src="https://grandmaster.studio/assets/images/diagram-move-16.png" style="max-width: 440px; width: 100%; height: auto; border-radius: 8px; box-shadow: 0 6px 18px rgba(0,0,0,0.35); display: inline-block;"/><div style="font-size: 0.9em; font-style: italic; color: #94a3b8; margin-top: 8px;">Critical Turning Point: Position after 16... Nc4 — White to Move</div></div> What is the best move for white?</p>
 </div>
 <div >
 <p><strong>17. Bc1?</strong></p>
@@ -398,23 +397,23 @@ penetrating with his knight to c4, as Timman believes.</p>
 <div >
 <p>Smyslov’s suggestion:</p>
 </div>
-<div style="margin: 20px 0; padding: 14px 18px; border-left: 4px solid #0284c7; background: #f0f9ff; border-radius: 4px;"><div style="font-weight: bold; color: #0369a1; margin-bottom: 8px; font-size: 1.05em;">🔍 Variation: 17. ♜ab1</div>
+<div style="margin: 22px 0; padding: 16px 20px; border-left: 4px solid #38bdf8; background: #1e293b; color: #f8fafc; border-radius: 6px;"><div style="font-weight: 700; color: #38bdf8; margin-bottom: 10px; font-size: 1.1em; letter-spacing: -0.01em;">🔍 Variation: 17. ♜ab1</div>
 <div >
-<p><strong>17. Rab1 Rfd8</strong></p>
+<p style="color: #f1f5f9; line-height: 1.6;"><strong>17. Rab1 Rfd8</strong></p>
 </div>
 <div >
-<p>and ironically now</p>
+<p style="color: #f1f5f9; line-height: 1.6;">and ironically now</p>
 </div>
 <div >
-<p><strong>18. Bc1 Nd7 19. d5 Na5 20. Be3 cxd5 21. Nxd5 e6 22. Qb5 exd5 23. Qxa5 d4 24. Bf2 fxe4 25. fxe4 b6 26. cxb6 axb6 27. Qd5 Qxd5 28. exd5 Rxa2 29. Rfd1 Ra4 30. d6 Kh7 31. Bc6 Rc4 32. Bb5 Rc5 33. Bxd4 Bxd4+ 34. Rxd4 Kg7 35. Ba4 Ne5 Eval: -0.01 wdl:[25%,49%,26%]</strong></p>
+<p style="color: #f1f5f9; line-height: 1.6;"><strong>18. Bc1 Nd7 19. d5 Na5 20. Be3 cxd5 21. Nxd5 e6 22. Qb5 exd5 23. Qxa5 d4 24. Bf2 fxe4 25. fxe4 b6 26. cxb6 axb6 27. Qd5 Qxd5 28. exd5 Rxa2 29. Rfd1 Ra4 30. d6 Kh7 31. Bc6 Rc4 32. Bb5 Rc5 33. Bxd4 Bxd4+ 34. Rxd4 Kg7 35. Ba4 Ne5 Eval: -0.01 wdl:[25%,49%,26%]</strong></p>
 </div>
 </div>
 <div >
 <p>Smyslov’s insight (pushing the e-pawn and expanding the center):</p>
 </div>
-<div style="margin: 20px 0; padding: 14px 18px; border-left: 4px solid #0284c7; background: #f0f9ff; border-radius: 4px;"><div style="font-weight: bold; color: #0369a1; margin-bottom: 8px; font-size: 1.05em;">🔍 Variation: 17. ♛e2</div>
+<div style="margin: 22px 0; padding: 16px 20px; border-left: 4px solid #38bdf8; background: #1e293b; color: #f8fafc; border-radius: 6px;"><div style="font-weight: 700; color: #38bdf8; margin-bottom: 10px; font-size: 1.1em; letter-spacing: -0.01em;">🔍 Variation: 17. ♛e2</div>
 <div >
-<p><strong>17. Qe2!! f4 18. e5 Nxb2 19. Qxb2 Nd5 20. Nxd5 Qxd5 21. Rfd1 Rab8 22. Qb3 Qf7 23. Rac1 h5 24. Kf2 Bh6 25. Rc3 Qxb3 26. Rxb3 b6 27. cxb6 Rxb6 28. Bf1 Kg7 29. Bc4 fxg3 30. hxg3 h4 31. gxh4 Bf4 32. Ke2 Rh8 33. Kd3 Rxh4 34. Rdb1 Bg3 35. Rxb6 axb6 36. Rxb6 Bf2 37. Rxc6 Rxd4+ 38. Ke2 Bg3 39. a4 Bxe5 Eval: +0.40 wdl:[312,553,135]</strong></p>
+<p style="color: #f1f5f9; line-height: 1.6;"><strong>17. Qe2!! f4 18. e5 Nxb2 19. Qxb2 Nd5 20. Nxd5 Qxd5 21. Rfd1 Rab8 22. Qb3 Qf7 23. Rac1 h5 24. Kf2 Bh6 25. Rc3 Qxb3 26. Rxb3 b6 27. cxb6 Rxb6 28. Bf1 Kg7 29. Bc4 fxg3 30. hxg3 h4 31. gxh4 Bf4 32. Ke2 Rh8 33. Kd3 Rxh4 34. Rdb1 Bg3 35. Rxb6 axb6 36. Rxb6 Bf2 37. Rxc6 Rxd4+ 38. Ke2 Bg3 39. a4 Bxe5 Eval: +0.40 wdl:[312,553,135]</strong></p>
 </div>
 </div>
 <div >
@@ -443,33 +442,33 @@ strong position.</p>
 <div >
 <p>Another poor choice by Portisch. Neither Timman nor Smyslov realized that Portisch still had chances with:</p>
 </div>
-<div style="margin: 20px 0; padding: 14px 18px; border-left: 4px solid #0284c7; background: #f0f9ff; border-radius: 4px;"><div style="font-weight: bold; color: #0369a1; margin-bottom: 8px; font-size: 1.05em;">🔍 Variation: 20. ♞xb5</div>
+<div style="margin: 22px 0; padding: 16px 20px; border-left: 4px solid #38bdf8; background: #1e293b; color: #f8fafc; border-radius: 6px;"><div style="font-weight: 700; color: #38bdf8; margin-bottom: 10px; font-size: 1.1em; letter-spacing: -0.01em;">🔍 Variation: 20. ♞xb5</div>
 <div class="paragraph pre">
-<p>What?? Imagine Smyslov’s shock had Portisch found this move.</p>
+<p style="color: #f1f5f9; line-height: 1.6;">What?? Imagine Smyslov’s shock had Portisch found this move.</p>
 </div>
 <div >
-<p><strong>20. Nxb5!! cxb5 21. Rxb5 Nde5 22. Qe2 fxe4 23. fxe4 Qe8 24. Rb4</strong></p>
+<p style="color: #f1f5f9; line-height: 1.6;"><strong>20. Nxb5!! cxb5 21. Rxb5 Nde5 22. Qe2 fxe4 23. fxe4 Qe8 24. Rb4</strong></p>
 </div>
 <div class="paragraph pre">
-<p>And the position is double-edged. Black would need to be precise with:</p>
+<p style="color: #f1f5f9; line-height: 1.6;">And the position is double-edged. Black would need to be precise with:</p>
 </div>
 <div >
-<p><strong>24... Rb8</strong></p>
+<p style="color: #f1f5f9; line-height: 1.6;"><strong>24... Rb8</strong></p>
 </div>
 <div class="olist arabic">
 <ol class="arabic">
-<li>
-<p>If Black played 24…​Rxf1+ the advantage would return to White:</p>
+<li style="color: #f1f5f9; line-height: 1.6;">
+<p style="color: #f1f5f9; line-height: 1.6;">If Black played 24…​Rxf1+ the advantage would return to White:</p>
 </li>
 </ol>
 </div>
-<div style="margin: 20px 0; padding: 14px 18px; border-left: 4px solid #0284c7; background: #f0f9ff; border-radius: 4px;"><div style="font-weight: bold; color: #0369a1; margin-bottom: 8px; font-size: 1.05em;">🔍 Variation: 24…​ ♜xf1+</div>
+<div style="margin: 22px 0; padding: 16px 20px; border-left: 4px solid #38bdf8; background: #1e293b; color: #f8fafc; border-radius: 6px;"><div style="font-weight: 700; color: #38bdf8; margin-bottom: 10px; font-size: 1.1em; letter-spacing: -0.01em;">🔍 Variation: 24…​ ♜xf1+</div>
 <div >
-<p><strong>24... Rxf1+? 25. Bxf1 Na5 26. Qa6 Qf7 27. Bf4 Kh7 28. c6 Naxc6 29. dxc6 Rd6 30. Bxe5 Bxe5 31. Qc4 Qf8 32. Be2 Rd2 33. Rb1 Bd4+ 34. Kh1 Qf2 35. Rf1 Qxe2 36. Qxe2 Rxe2 37. Rc1 Bb6 38. c7 Bxc7 39. Rxc7 Rxa2 40. Rxe7+ Kg8 41. e5 a5 42. e6 Eval: +0.13 wdl:[25%,57%,18%]</strong></p>
+<p style="color: #f1f5f9; line-height: 1.6;"><strong>24... Rxf1+? 25. Bxf1 Na5 26. Qa6 Qf7 27. Bf4 Kh7 28. c6 Naxc6 29. dxc6 Rd6 30. Bxe5 Bxe5 31. Qc4 Qf8 32. Be2 Rd2 33. Rb1 Bd4+ 34. Kh1 Qf2 35. Rf1 Qxe2 36. Qxe2 Rxe2 37. Rc1 Bb6 38. c7 Bxc7 39. Rxc7 Rxa2 40. Rxe7+ Kg8 41. e5 a5 42. e6 Eval: +0.13 wdl:[25%,57%,18%]</strong></p>
 </div>
 </div>
 <div >
-<p><strong>25. Rxc4 Nxc4 26. Qxc4 Qb5 27. Rxf8+ Kxf8 28. Qxb5 Rxb5 29. Be3 Ra5 30. c6 Rxa2 31. Bh3 Be5 32. Bxh6+ Ke8 33. Bg7! Bc7 34. Bd7+ Kf7 35. Bd4 Ra4 36. Bc5 Kf6 37. Kf2 a5 38. Ke2 Rc4 39. Be3 a4 40. Kd3 Rb4 41. Bc5 Rb5 42. Bd4+ Kf7 43. Kc2 a3 44. Be6+ Kf8 45. e5 Ke8 46. h4 Rb4 47. Bc3 Re4 48. g4 Kd8 49. Kb1 Re3 50. Bd4 Rd3 51. Bc5 Rc3 52. Bd4 Rc4 Eval: -0.31 wdl:[18%,50%,31%]</strong></p>
+<p style="color: #f1f5f9; line-height: 1.6;"><strong>25. Rxc4 Nxc4 26. Qxc4 Qb5 27. Rxf8+ Kxf8 28. Qxb5 Rxb5 29. Be3 Ra5 30. c6 Rxa2 31. Bh3 Be5 32. Bxh6+ Ke8 33. Bg7! Bc7 34. Bd7+ Kf7 35. Bd4 Ra4 36. Bc5 Kf6 37. Kf2 a5 38. Ke2 Rc4 39. Be3 a4 40. Kd3 Rb4 41. Bc5 Rb5 42. Bd4+ Kf7 43. Kc2 a3 44. Be6+ Kf8 45. e5 Ke8 46. h4 Rb4 47. Bc3 Re4 48. g4 Kd8 49. Kb1 Re3 50. Bd4 Rd3 51. Bc5 Rc3 52. Bd4 Rc4 Eval: -0.31 wdl:[18%,50%,31%]</strong></p>
 </div>
 </div>
 <div >
@@ -491,14 +490,14 @@ and the c6 pawn is doomed.</p>
 <div >
 <p>This is the losing move. Neither Timman nor Smyslov commented on Portisch’s opportunities to draw with:</p>
 </div>
-<div style="margin: 20px 0; padding: 14px 18px; border-left: 4px solid #0284c7; background: #f0f9ff; border-radius: 4px;"><div style="font-weight: bold; color: #0369a1; margin-bottom: 8px; font-size: 1.05em;">🔍 Variation: 22. a4</div>
+<div style="margin: 22px 0; padding: 16px 20px; border-left: 4px solid #38bdf8; background: #1e293b; color: #f8fafc; border-radius: 6px;"><div style="font-weight: 700; color: #38bdf8; margin-bottom: 10px; font-size: 1.1em; letter-spacing: -0.01em;">🔍 Variation: 22. a4</div>
 <div >
-<p><strong>22. a4 Bxc3 23. Qxc3 Nxa4 24. Qe1 Kh7 25. exf5 gxf5 26. f4 Rd6 27. Ra1 Qf6 28. Ra2 Nc5 29. Re2 e6 30. Be3 Nd3 31. Qa1 Qxa1 32. Rxa1 b4 33. Rxa6 b3 34. Ra7+ Kg8 35. Rb7 b2 36. h3 Na5 37. Rbxb2 Nxb2 38. Rxb2 Eval: -0.52 wdl:[166,459,375]</strong></p>
+<p style="color: #f1f5f9; line-height: 1.6;"><strong>22. a4 Bxc3 23. Qxc3 Nxa4 24. Qe1 Kh7 25. exf5 gxf5 26. f4 Rd6 27. Ra1 Qf6 28. Ra2 Nc5 29. Re2 e6 30. Be3 Nd3 31. Qa1 Qxa1 32. Rxa1 b4 33. Rxa6 b3 34. Ra7+ Kg8 35. Rb7 b2 36. h3 Na5 37. Rbxb2 Nxb2 38. Rxb2 Eval: -0.52 wdl:[166,459,375]</strong></p>
 </div>
 </div>
-<div style="margin: 20px 0; padding: 14px 18px; border-left: 4px solid #0284c7; background: #f0f9ff; border-radius: 4px;"><div style="font-weight: bold; color: #0369a1; margin-bottom: 8px; font-size: 1.05em;">🔍 Variation: 22. exf5</div>
+<div style="margin: 22px 0; padding: 16px 20px; border-left: 4px solid #38bdf8; background: #1e293b; color: #f8fafc; border-radius: 6px;"><div style="font-weight: 700; color: #38bdf8; margin-bottom: 10px; font-size: 1.1em; letter-spacing: -0.01em;">🔍 Variation: 22. exf5</div>
 <div >
-<p><strong>22. exf5 Qxf5 23. Ne4 Ne6 24. g4 Qe5 25. Kh1 Nd4 26. Qf2 Qc7 27. f4 Qxc6 28. g5 Qe6 29. gxh6 Bxh6 30. a4 Ne5 31. axb5 Nd3 32. Qe3 Nxf4 33. Ng3 Qxe3 34. Bxe3 Eval: -0.45 wdl:[155,500,345]</strong></p>
+<p style="color: #f1f5f9; line-height: 1.6;"><strong>22. exf5 Qxf5 23. Ne4 Ne6 24. g4 Qe5 25. Kh1 Nd4 26. Qf2 Qc7 27. f4 Qxc6 28. g5 Qe6 29. gxh6 Bxh6 30. a4 Ne5 31. axb5 Nd3 32. Qe3 Nxf4 33. Ng3 Qxe3 34. Bxe3 Eval: -0.45 wdl:[155,500,345]</strong></p>
 </div>
 </div>
 <div >
@@ -541,9 +540,9 @@ advantage to Black.</p>
     </p>
 </div>
 
-<div style="margin: 28px 0; padding: 18px; border: 1px solid #cbd5e1; background: #f8fafc; border-radius: 8px;">
-    <h4 style="margin-top: 0; color: #334155;">📜 Game PGN (Ready for Chess.com Game Viewer)</h4>
-    <p style="font-size: 0.9em; color: #64748b; margin-bottom: 8px;">
+<div style="margin: 28px 0; padding: 18px; border: 1px solid #334155; background: #0f172a; color: #f8fafc; border-radius: 8px;">
+    <h4 style="margin-top: 0; color: #38bdf8;">📜 Game PGN (Ready for Chess.com Game Viewer)</h4>
+    <p style="font-size: 0.9em; color: #94a3b8; margin-bottom: 8px;">
         To embed an interactive Chess.com board in this post, click the <strong>&ldquo;Insert Chess Game&rdquo;</strong> button in the Chess.com editor toolbar, choose <strong>&ldquo;Paste PGN&rdquo;</strong>, and paste the text below:
     </p>
     <pre style="background: #1e293b; color: #f1f5f9; padding: 14px; border-radius: 6px; overflow-x: auto; font-size: 0.88em; line-height: 1.5; white-space: pre-wrap; font-family: monospace;">[Event "Portoroz Candidates Playoff"]
@@ -597,7 +596,7 @@ function fallbackCopy(el) {
 
 function showSuccess() {
     const msg = document.getElementById('status-msg');
-    msg.textContent = '✅ Copied Rich Text! Switch to Chess.com and paste (Cmd + V).';
+    msg.textContent = '✅ Copied! Switch to Chess.com and paste (Cmd + V).';
     setTimeout(() => { msg.textContent = ''; }, 6000);
 }
 </script>

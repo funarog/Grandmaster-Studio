@@ -99,7 +99,9 @@ Portisch simply opted for the quieter 4.Nf3 instead.
 
 **4... Bg7 5. b3**
 
-📌 [Position after 5. b3 — Semi-Leningrad Structure] Timman thought this line was first used in 1960 by Trifunović
+![Position after 5. b3 — Semi-Leningrad structure](https://grandmaster.studio/assets/images/diagram-move-5.png)
+
+Position after 5. b3 — Semi-Leningrad structure Timman thought this line was first used in 1960 by Trifunović
 against Matulović. However, one earlier recorded master-level game featuring this exact position on move 5 was played on February 27, 1925, between Richard Réti and Savielly Tartakower during the famous Baden-Baden 1925 chess tournament.
 
 (Note that Leela lists 5.b3 first (Stockfish about 3rd), with very little difference between 5…​d5, 5…​O-O, 5…​c6, and 5…​Ne4). In other words, Portisch's position is fine; Leela and Stockfish approve.
@@ -129,7 +131,9 @@ Leela’s evaluation of the variations (6…​b6, 6…​d6, 6…​a5, 6…​
 
 **7. c4 c6 8. O-O Be6!? 9. Ng5 Bf7 10. Nc3 Qe8?!**
 
-📌 [Position after 10... Qe8?! — Black unpins the Knight] Timman finds this move to be 'strange'. Leela agrees. It gives white a slight edge. Perhaps it is a bit too passive. Leela places any of these moves as better (10…​e6,10…​Bh6,10…​a5,10…​Ne4,10…​h6,)
+![Position after 10... Qe8?! — Black unpins the Knight](https://grandmaster.studio/assets/images/diagram-move-10.png)
+
+Position after 10... Qe8?! — Black unpins the Knight Timman finds this move to be 'strange'. Leela agrees. It gives white a slight edge. Perhaps it is a bit too passive. Leela places any of these moves as better (10…​e6,10…​Bh6,10…​a5,10…​Ne4,10…​h6,)
 
 This position strikes me as what Jonathan Rowson would call **"doing nothing"**. Rowson argues that against a solid opponent, actively trying to create something out of nothing is a psychological trap. Instead, he suggests maintaining a good position and waiting; literally "doing nothing" constructive can sometimes force the opponent to try and make progress until they make a mistake.
 
@@ -167,7 +171,9 @@ penetrating with his knight to c4, as Timman believes.
 
 **15. bxc4 Nb6 16. c5 Nc4**
 
-📌 [Critical Moment: Position after 16... Nc4 — White to Move] What is the best move for white?
+![Critical Turning Point: Position after 16... Nc4 — White to Move](https://grandmaster.studio/assets/images/diagram-move-16.png)
+
+Critical Turning Point: Position after 16... Nc4 — White to Move What is the best move for white?
 
 **17. Bc1?**
 
